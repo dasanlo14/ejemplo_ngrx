@@ -1,0 +1,17 @@
+<ul> 
+    <table border="1">  
+        <tr>
+            <td>Frase introducida</td>
+            <td>Tiempo transcurrido</td>
+            <td>Borrar</td>
+        </tr>
+        <tr *ngFor = "let item of itemList">
+                <td>{{ item?.name }}</td>
+                <td>{{item?.timeDifference}}</td>
+                <td><button (click)="eraseItemList(item?.creationDate)">Borrar</button></td>  
+        </tr>
+    </table>
+</ul>
+
+
+   
